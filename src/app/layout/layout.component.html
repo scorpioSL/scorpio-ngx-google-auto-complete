@@ -1,0 +1,13 @@
+<nb-layout>
+    <nb-layout-header fixed>
+        <h6>Google Autocomplete</h6>
+    </nb-layout-header>
+    <nb-sidebar>
+        <nb-menu tag="menu" [items]="menuItems"></nb-menu>
+    </nb-sidebar>
+
+    <nb-layout-column>
+        <router-outlet></router-outlet>
+    </nb-layout-column>
+    <nb-layout-footer fixed></nb-layout-footer>
+</nb-layout>

@@ -4,7 +4,7 @@ Angular google auto complete (wrapper for [ngx-google-places-autocomplete](https
 
 Working with latest Angular 11. 
 
-![Demo Image](./src/assets/demo.png)
+![Demo Image](../../src/assets/demo.png)
 
 ## Installation
 

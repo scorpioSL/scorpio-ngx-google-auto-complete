@@ -1,9 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "cli": {
+    "analytics": "ca406820-cc3d-4cca-a2c6-d7b8cc3f3e9a"
+  },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "gooleAutoComplete": {
+    "googleAutoComplete": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -15,12 +18,12 @@
       },
       "root": "",
       "sourceRoot": "src",
-      "prefix": "app",
+      "prefix": "ngx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/gooleAutoComplete",
+            "outputPath": "dist/googleAutoComplete",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,18 +71,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "gooleAutoComplete:build"
+            "browserTarget": "googleAutoComplete:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "gooleAutoComplete:build:production"
+              "browserTarget": "googleAutoComplete:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "gooleAutoComplete:build"
+            "browserTarget": "googleAutoComplete:build"
           }
         },
         "test": {
@@ -116,16 +119,64 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "gooleAutoComplete:serve"
+            "devServerTarget": "googleAutoComplete:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "gooleAutoComplete:serve:production"
+              "devServerTarget": "googleAutoComplete:serve:production"
             }
+          }
+        }
+      }
+    },
+    "@scorpio/ngx-google-auto-complete": {
+      "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        },
+        "@schematics/angular:application": {
+          "strict": true
+        }
+      },
+      "root": "projects/google-auto-complete",
+      "sourceRoot": "projects/google-auto-complete/src",
+      "prefix": "ngx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/google-auto-complete/tsconfig.lib.json",
+            "project": "projects/google-auto-complete/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/google-auto-complete/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/google-auto-complete/src/test.ts",
+            "tsConfig": "projects/google-auto-complete/tsconfig.spec.json",
+            "karmaConfig": "projects/google-auto-complete/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/google-auto-complete/tsconfig.lib.json",
+              "projects/google-auto-complete/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
           }
         }
       }
     }
   },
-  "defaultProject": "gooleAutoComplete"
+  "defaultProject": "googleAutoComplete"
 }

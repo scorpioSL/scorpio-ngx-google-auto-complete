@@ -5,8 +5,15 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
+    "strictPropertyInitialization": false,
     "strict": true,
     "noImplicitReturns": true,
+    "paths": {
+      "google-auto-complete": [
+        "dist/google-auto-complete/google-auto-complete",
+        "dist/google-auto-complete"
+      ]
+    },
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "declaration": false,

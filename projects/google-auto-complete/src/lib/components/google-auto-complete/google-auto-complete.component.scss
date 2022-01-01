@@ -1,0 +1,15 @@
+::ng-deep .pac-container {
+    z-index: 99999;
+}
+
+::ng-deep .pac-logo::after {
+    display: none;
+}
+::ng-deep .pac-item {
+    padding: 7px 4px;
+    font-weight: bold;
+
+    ::ng-deep .pac-icon {
+        visibility: hidden;
+    }
+}

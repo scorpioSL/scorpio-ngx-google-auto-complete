@@ -1,0 +1,15 @@
+{
+  "name": "@scorpio/ngx-google-auto-complete",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^11.1.2",
+    "@angular/core": "^11.1.2",
+    "@nebular/eva-icons": "7.0.2",
+    "@nebular/theme": "^7.0.2",
+    "eva-icons": "^1.1.2",
+    "ngx-google-places-autocomplete": "^2.0.5"
+  },
+  "dependencies": {
+    "tslib": "^2.0.0"
+  }
+}

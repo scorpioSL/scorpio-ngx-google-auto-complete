@@ -1,0 +1,108 @@
+<div class="row">
+    <div class="col-6">
+        <nb-card>
+            <nb-card-header>
+                Default Settings
+            </nb-card-header>
+            <nb-card-body>
+                <ngx-google-auto-complete (onPlaceSelect)="onDataChange($event)"></ngx-google-auto-complete>
+            </nb-card-body>
+        </nb-card>
+    </div>
+    <div class="col-6">
+        <nb-card>
+            <nb-card-header>
+                Restricting only for cities
+            </nb-card-header>
+            <nb-card-body>
+                <ngx-google-auto-complete [options]="settings1" (onPlaceSelect)="onDataChange($event)">
+                </ngx-google-auto-complete>
+            </nb-card-body>
+        </nb-card>
+    </div>
+
+    <div class="col-6">
+        <nb-card>
+            <nb-card-header>
+                Restricting only for one country
+            </nb-card-header>
+            <nb-card-body>
+                <ngx-google-auto-complete [options]="settings2" (onPlaceSelect)="onDataChange($event)">
+                </ngx-google-auto-complete>
+            </nb-card-body>
+        </nb-card>
+    </div>
+
+    <div class="col-6">
+        <nb-card>
+            <nb-card-header>
+                Auto complete with initial value
+            </nb-card-header>
+            <nb-card-body>
+                <ngx-google-auto-complete [textboxValue]="initialTextBoxValue" (onPlaceSelect)="onDataChange($event)">
+                </ngx-google-auto-complete>
+            </nb-card-body>
+        </nb-card>
+    </div>
+
+    <div class="col-6">
+        <nb-card>
+            <nb-card-header>
+                Auto complete with place holder
+            </nb-card-header>
+            <nb-card-body>
+                <ngx-google-auto-complete [placeHolder]="placeHolder" (onPlaceSelect)="onDataChange($event)">
+                </ngx-google-auto-complete>
+            </nb-card-body>
+        </nb-card>
+    </div>
+
+    <div class="col-6">
+        <nb-card>
+            <nb-card-header>
+                Auto complete type ADDRESS
+            </nb-card-header>
+            <nb-card-body>
+                <ngx-google-auto-complete [autoCompleteType]="autoCompleteType1" (onPlaceSelect)="onDataChange($event)">
+                </ngx-google-auto-complete>
+            </nb-card-body>
+        </nb-card>
+    </div>
+
+    <div class="col-6">
+        <nb-card>
+            <nb-card-header>
+                Auto complete type BUSINESS
+            </nb-card-header>
+            <nb-card-body>
+                <ngx-google-auto-complete [autoCompleteType]="autoCompleteType2" (onPlaceSelect)="onDataChange($event)">
+                </ngx-google-auto-complete>
+            </nb-card-body>
+        </nb-card>
+    </div>
+
+    <div class="col-6">
+        <nb-card>
+            <nb-card-header>
+                Auto complete type COMPLETE_ADDRESS
+            </nb-card-header>
+            <nb-card-body>
+                <ngx-google-auto-complete [autoCompleteType]="autoCompleteType3" (onPlaceSelect)="onDataChange($event)">
+                </ngx-google-auto-complete>
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <nb-card>
+            <nb-card-header>
+                Output
+            </nb-card-header>
+            <nb-card-body>
+                <json-editor [options]="editorOptions" [data]="data"></json-editor>
+            </nb-card-body>
+        </nb-card>
+    </div>
+</div>
