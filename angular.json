@@ -129,7 +129,7 @@
         }
       }
     },
-    "@scorpio/ngx-google-auto-complete": {
+    "@scorpiosl4/ngx-google-auto-complete": {
       "projectType": "library",
       "schematics": {
         "@schematics/angular:component": {

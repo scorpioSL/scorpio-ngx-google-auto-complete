@@ -1,6 +1,6 @@
 {
-  "name": "google-auto-complete-demo",
-  "version": "0.0.0",
+  "name": "@scorpiosl4/google-auto-complete-demo",
+  "version": "0.0.1",
   "author": {
     "name": "Pulasthi Bandara",
     "email": "pula0404@gmail.com"
@@ -12,10 +12,10 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build": "npm run clean && npm run build-lib && ng build --configuration production --delete-output-path=false --output-hashing=none --base-href ./",
-    "build-lib": "ng build --configuration production @scorpio/ngx-google-auto-complete",
+    "build-lib": "ng build --configuration production @scorpiosl4/ngx-google-auto-complete",
     "postbuild-lib": "cpx 'projects/google-auto-complete/*.md' 'dist/google-auto-complete'",
     "prerelease": "npm run build-lib",
-    "release": "cd 'dist/google-auto-complete' && npm publish"
+    "release": "cd 'dist/google-auto-complete' && npm publish --access public"
   },
   "private": true,
   "dependencies": {

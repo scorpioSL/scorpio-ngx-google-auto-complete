@@ -1,5 +1,5 @@
 {
-  "name": "@scorpio/ngx-google-auto-complete",
+  "name": "@scorpiosl4/ngx-google-auto-complete",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^11.1.2",

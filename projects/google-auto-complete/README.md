@@ -1,4 +1,4 @@
-# @scorpio/ngx-google-auto-complete
+# @scorpiosl4/ngx-google-auto-complete
 
 Angular google auto complete (wrapper for [ngx-google-places-autocomplete](https://github.com/skynet2/ngx-google-places-autocomplete)).
 
@@ -10,7 +10,7 @@ Working with latest Angular 11.
 
 To install this library with npm, run below command:
 
-$ npm install --save ngx-google-places-autocomplete @scorpio/ngx-google-auto-complete
+$ npm install --save ngx-google-places-autocomplete @scorpiosl4/ngx-google-auto-complete
 
 
 Example:
@@ -34,7 +34,7 @@ First add your google maps autocomplete api key into following script tag and ad
 Next, Import GoogleAutoCompleteModule in root
 
 ```ts
-import { GoogleAutoCompleteModule } from '@scorpio/ngx-google-auto-complete' 
+import { GoogleAutoCompleteModule } from '@scorpiosl4/ngx-google-auto-complete' 
 
 @NgModule({
   declarations: [
@@ -53,8 +53,8 @@ Then setup your component models as below :
 
 ```ts
 import { Component, ViewChild } from '@angular/core';
-import { Address } from '@scorpio/ngx-google-auto-complete';
-import { AUTO_COMPLETE_TYPE, IGoogleAddressComponents, Options } from '@scorpio/ngx-google-auto-complete';
+import { Address } from '@scorpiosl4/ngx-google-auto-complete';
+import { AUTO_COMPLETE_TYPE, IGoogleAddressComponents, Options } from '@scorpiosl4/ngx-google-auto-complete';
 
 @Component({
   selector: 'app-demo',
