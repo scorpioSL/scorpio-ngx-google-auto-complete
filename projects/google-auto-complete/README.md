@@ -118,7 +118,7 @@ Then use the component
 
 | Output | Output value type | Usage |
 | ------------- | ------------- | ----------- |
-| onPlaceSelect | Address | IGoogleAddressComponents[] | Get the google data for the selected place |
+| onPlaceSelect | Address OR IGoogleAddressComponents[] | Get the google data for the selected place |
 | onInputInitialized | ElementRef | Apply any changes for the Input element |
 
 
