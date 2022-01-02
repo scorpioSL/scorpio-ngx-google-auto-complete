@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { NbThemeModule, NbLayoutModule, NbSidebarModule, NbMenuModule, NbCardModule } from '@nebular/theme';
+import { NbThemeModule, NbLayoutModule, NbSidebarModule, NbMenuModule, NbCardModule, NbInputModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { DemoComponent } from './demo/demo.component';
 import { GoogleAutoCompleteModule } from 'projects/google-auto-complete/src/lib';
@@ -31,6 +31,7 @@ import { NgJsonEditorModule } from 'ang-jsoneditor';
     NbCardModule,
     NgbModule,
     NgJsonEditorModule,
+    NbInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

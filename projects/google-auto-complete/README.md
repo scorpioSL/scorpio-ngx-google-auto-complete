@@ -4,7 +4,7 @@ Angular google auto complete (wrapper for [ngx-google-places-autocomplete](https
 
 Working with latest Angular 11. 
 
-![Demo Image](../../src/assets/demo.png)
+![Demo Image](./src/assets/demo.png)
 
 ## Installation
 
@@ -53,7 +53,7 @@ Then setup your component models as below :
 
 ```ts
 import { Component, ViewChild } from '@angular/core';
-import { Address } from '@scorpiosl4/ngx-google-auto-complete';
+import { Address } from '@scorpio/ngx-google-auto-complete';
 import { AUTO_COMPLETE_TYPE, IGoogleAddressComponents, Options } from '@scorpiosl4/ngx-google-auto-complete';
 
 @Component({
@@ -66,6 +66,15 @@ export class DemoComponent {
   public options: Options = {
     types: ['(cities)'],
   };
+
+  public cssClass: string = 'form-control';
+  
+  public attributes: IAttribute[] = [
+    {
+      name: 'disabled',
+      value: 'true',
+    }
+  ];
 
   public options2: Options = {
     componentRestrictions: { country: 'lk' }, //limit response for a specific country
@@ -102,6 +111,15 @@ Then use the component
 | textboxValue  | string  | Set initial value of the text box |
 | placeHolder  | string  | Set place holder text |
 | options  | Options  | Change google results (eg cities only,limit for a specific country, etc..)|
+| cssClass  | string  | Set css class to the input element |
+| attributes  | Array<IAttribute>  | Set attributes to the input element |
+
+# Outputs
+
+| Output | Output value type | Usage |
+| ------------- | ------------- | ----------- |
+| onPlaceSelect | Address | IGoogleAddressComponents[] | Get the google data for the selected place |
+| onInputInitialized | ElementRef | Apply any changes for the Input element |
 
 
 # License

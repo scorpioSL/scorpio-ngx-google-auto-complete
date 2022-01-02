@@ -9,3 +9,4 @@ export * from './photo';
 export * from './placeReview';
 export * from './options/componentRestrictions';
 export * from './options/options';
+export * from './attribute.interface';

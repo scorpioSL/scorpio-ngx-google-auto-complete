@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { JsonEditorComponent, JsonEditorOptions } from 'ang-jsoneditor';
-import { Address, AUTO_COMPLETE_TYPE, IGoogleAddressComponents, Options } from 'projects/google-auto-complete/src/lib';
+import { Address, AUTO_COMPLETE_TYPE, IAttribute, IGoogleAddressComponents, Options } from 'projects/google-auto-complete/src/lib';
 
 @Component({
   selector: 'app-demo',
@@ -10,6 +10,15 @@ import { Address, AUTO_COMPLETE_TYPE, IGoogleAddressComponents, Options } from '
 export class DemoComponent {
   public editorOptions: JsonEditorOptions;
   public data: any;
+
+  public cssClass: string = 'form-control';
+  
+  public attributes: IAttribute[] = [
+    {
+      name: 'disabled',
+      value: 'true',
+    }
+  ];
 
   public settings1: Options = {
     types: ['(cities)'],

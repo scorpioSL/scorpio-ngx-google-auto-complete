@@ -5,7 +5,7 @@
                 Default Settings
             </nb-card-header>
             <nb-card-body>
-                <ngx-google-auto-complete (onPlaceSelect)="onDataChange($event)"></ngx-google-auto-complete>
+                <ngx-google-auto-complete [cssClass]="cssClass" (onPlaceSelect)="onDataChange($event)"></ngx-google-auto-complete>
             </nb-card-body>
         </nb-card>
     </div>
@@ -15,7 +15,7 @@
                 Restricting only for cities
             </nb-card-header>
             <nb-card-body>
-                <ngx-google-auto-complete [options]="settings1" (onPlaceSelect)="onDataChange($event)">
+                <ngx-google-auto-complete [attributes]="attributes" [options]="settings1" (onPlaceSelect)="onDataChange($event)">
                 </ngx-google-auto-complete>
             </nb-card-body>
         </nb-card>
