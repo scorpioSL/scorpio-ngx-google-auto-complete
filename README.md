@@ -62,7 +62,7 @@ import { AUTO_COMPLETE_TYPE, IGoogleAddressComponents, Options } from '@scorpios
   styleUrls: ['./demo.component.scss']
 })
 export class DemoComponent {
-
+  public data:any = {};
   public options: Options = {
     types: ['(cities)'],
   };
