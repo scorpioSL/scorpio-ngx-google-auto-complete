@@ -10,6 +10,9 @@
     "ngx-google-places-autocomplete": "^2.0.5"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.0.0",
+    "@nebular/eva-icons": "7.0.2",
+    "@nebular/theme": "^7.0.2",
+    "ngx-google-places-autocomplete": "^2.0.5"
   }
 }
