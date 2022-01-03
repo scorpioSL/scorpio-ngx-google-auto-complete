@@ -1,6 +1,6 @@
 {
   "name": "@scorpiosl4/ngx-google-auto-complete",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "peerDependencies": {
     "@angular/common": "^11.1.2",
     "@angular/core": "^11.1.2",
@@ -8,5 +8,14 @@
   },
   "dependencies": {
     "tslib": "^2.0.0"
-  }
+  },
+  "repository": {
+    "url": "https://github.com/scorpioSL/scorpio-ngx-google-auto-complete",
+    "type": "git"
+  },
+  "author": {
+    "name": "Pulasthi Bandara",
+    "email": "pula0404@gmail.com"
+  },
+  "license": "MIT"
 }
