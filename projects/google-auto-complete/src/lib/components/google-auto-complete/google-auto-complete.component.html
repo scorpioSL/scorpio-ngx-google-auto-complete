@@ -1,1 +1,1 @@
-<input #Inputbox [class]="cssClass" [placeholder]="placeHolder" [(ngModel)]="textboxValue" fullWidth ngx-google-places-autocomplete [options]="settings" #placesRef="ngx-places" (onAddressChange)="onAddressChange($event)"/>
+<input #Inputbox [class]="cssClass ? cssClass : 'form-control'" [placeholder]="placeHolder" [(ngModel)]="textboxValue" fullWidth ngx-google-places-autocomplete [options]="settings" #placesRef="ngx-places" (onAddressChange)="onAddressChange($event)"/>
