@@ -1,6 +1,6 @@
 {
   "name": "@scorpiosl4/ngx-google-auto-complete",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "peerDependencies": {
     "@angular/common": "^11.1.2",
     "@angular/core": "^11.1.2",
@@ -17,5 +17,12 @@
     "name": "Pulasthi Bandara",
     "email": "pula0404@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [
+    "ngx-google-autocomplete",
+    "angular-google-autocomplete",
+    "google-auto-complete",
+    "google-places",
+    "autocomplete"
+  ]
 }
