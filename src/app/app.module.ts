@@ -7,10 +7,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NbThemeModule, NbLayoutModule, NbSidebarModule, NbMenuModule, NbCardModule, NbInputModule } from '@nebular/theme';
 import { NbEvaIconsModule } from '@nebular/eva-icons';
 import { DemoComponent } from './demo/demo.component';
-import { GoogleAutoCompleteModule } from 'projects/google-auto-complete/src/lib';
+// import { GoogleAutoCompleteModule } from 'projects/google-auto-complete/src/lib';
 import { LayoutComponent } from './layout/layout.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgJsonEditorModule } from 'ang-jsoneditor';
+import { GoogleAutoCompleteModule } from '@scorpiosl4/ngx-google-auto-complete';
 
 @NgModule({
   declarations: [
