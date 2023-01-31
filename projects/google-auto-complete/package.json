@@ -1,9 +1,9 @@
 {
   "name": "@scorpiosl4/ngx-google-auto-complete",
-  "version": "0.0.6",
+  "version": "1.0.0",
   "peerDependencies": {
-    "@angular/common": "^11.1.2",
-    "@angular/core": "^11.1.2",
+    "@angular/common": "^14.2.12",
+    "@angular/core": "^14.2.12",
     "ngx-google-places-autocomplete": "^2.0.5"
   },
   "dependencies": {
